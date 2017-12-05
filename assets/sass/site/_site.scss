@@ -1,0 +1,191 @@
+/*==============================
+=            header            =
+==============================*/
+
+header {
+	padding: 40px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 99;
+
+	&.scrolled {
+		background-color: white;
+	}
+}
+
+/*=================================
+=            elemenbts            =
+=================================*/
+body {
+	overflow-x: hidden;
+}
+
+.se-slope{
+	margin: 0 0;
+	transform-origin: left center;
+	position: absolute;
+	width: 110%;
+	height: 250px; 
+	z-index: -1;
+	left: 0;
+	background-color: white;
+}
+
+.se-slope.top {
+	transform: rotate(6deg) skew(6deg,0deg);
+	top: 0;
+	margin-top: -250px;
+}
+
+.se-slope.bottom {
+	transform: rotate(-6deg) skew(-6deg,0deg);
+	bottom: 0;
+	margin-bottom: -250px;
+}
+
+/*================================
+=            sections            =
+================================*/
+
+section {
+	position: relative;
+	min-height: 100px;
+	max-width: 100vw;
+	background-color: white;
+
+	h3 {
+		color: #5f007b;
+		font-size: 70px;
+		border-bottom: 2px solid #27b6b3;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		line-height: 1;
+	}
+
+}
+
+#intro {
+	height: 100vh;
+	min-height: 900px;
+	background-color: transparent;
+
+	h1, h2 {
+		color: white;
+		line-height: 1;
+		margin: 0;
+	}
+
+	h1 {
+		color: white;
+		font-size: 90px;
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		color: white;
+		font-size: 60px;
+	}
+
+	h3, p {
+		color: white;
+	}
+}
+
+#reach {
+	padding: 200px 0;
+}
+
+#social {
+	height: 100vh;
+	min-height: 900px;
+	background-color: transparent;
+
+	h3, p {
+		color: white;
+	}
+}
+
+#brands {
+	padding: 200px 0;
+
+	.images {
+
+		img {
+			float: left;
+			width: 49%;
+			margin-right: 0.5%;
+			margin-bottom: 0.5%;
+		}
+	}
+}
+
+.multiple-items {
+	width: 100%;
+}
+#coverage {
+	height: 100vh;
+	min-height: 900px;
+	background-color: transparent;
+
+	h3, p {
+		color: white;
+	}
+}
+
+#news {
+	padding: 200px 0;
+}
+
+#subfooter {
+	padding: 50px 0;
+	background-color: #591985;
+	color: white;
+
+	.branding {
+
+		img {
+			margin-bottom: 20px;
+		}
+	}
+
+	.offices {
+		border-left: 2px solid #27b6b3;
+		padding-left: 4%;
+
+		.office {
+			margin-bottom: 40px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			h4 {
+				color: #27b6b3;
+				font-size: 22px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+footer {
+	padding: 25px 0;
+	background-color: #27b6b3;
+
+	p, ul, li, a {
+		color: white;
+	}
+
+	ul {
+		margin: 0;
+		text-align: right;
+
+		li {
+			display: inline-block;
+			margin-left: 15px;
+		}
+	}
+}

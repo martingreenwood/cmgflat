@@ -1,0 +1,39 @@
+/*===========================
+=            nav            =
+===========================*/
+
+.nav {
+
+	ul {
+		margin: 0;
+		text-align: right;
+
+		li {
+			display: inline-block;
+			margin-left: 15px;
+		}
+	}
+}
+
+.scrolled {
+
+	.branding {
+
+		img {
+			filter: brightness(1);
+		}
+	}
+
+	.nav {
+
+		ul {
+
+			li {
+
+				a {
+					color: black;
+				}
+			}
+		}
+	}
+}
